@@ -1,0 +1,25 @@
+h1, p {
+  text-align: center;
+}
+
+.subjects {
+  height: 500px;
+  padding-bottom: 80px;
+  background-color: #f7f7f7;
+}
+
+.subject {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+.jp, .science, .fgnlang, .artsncrafts, .music {
+  background-color: #f5c51f
+}
+
+.math, .social, .pe, .homeeco, .guidance {
+  background-color: #93e35d
+}

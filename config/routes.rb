@@ -1,0 +1,60 @@
+Rails.application.routes.draw do
+
+  get '/' => "home#top"
+  get "about" => "home#about"
+
+  post "users/:id/update" => "users#update"
+  get "users/:id/edit" => "users#edit"
+  get "signup" => "users#new"
+  post "users/create" => "users#create"
+  get "users/index" => "users#index"
+  get "users/:id" => "users#show"
+  post "login" => "users#login"
+  post "logout" => "users#logout"
+  get "login" => "users#login_form"
+  get "users/:id/likes" => "users#likes"
+
+  get "ele/" => "elementary#top"
+  get "ele/all" => "elementary#all"
+  get "ele/1st" => "elementary#1st"
+  get "ele/2nd" => "elementary#2nd"
+  get "ele/3rd" => "elementary#3rd"
+  get "ele/4th" => "elementary#4th"
+  get "ele/5th" => "elementary#5th"
+  get "ele/6th" => "elementary#6th"
+  get "ele/alljp" => "elementary#alljp"
+  get "ele/allmath" => "elementary#allmath"
+  get "ele/allscience" => "elementary#allscience"
+  get "ele/allsocial" => "elementary#allsocial"
+  get "ele/allfgnlang" => "elementary#allfgnlang"
+  get "ele/allpe" => "elementary#allpe"
+  get "ele/allartsncrafts" => "elementary#allartsncrafts"
+  get "ele/allhomeeco" => "elementary#allhomeeco"
+  get "ele/allmusic" => "elementary#allmusic"
+  get "ele/allguidance" => "elementary#allguidance"
+
+  get 'jh/' => "juniorhigh#top"
+  get 'jh/jp' => "juniorhigh#jp"
+  get 'jh/math' => "juniorhigh#math"
+  get 'jh/science' => "juniorhigh#science"
+  get 'jh/social' => "juniorhigh#social"
+  get 'jh/english' => "juniorhigh#english"
+  get 'jh/pe' => "juniorhigh#pe"
+  get 'jh/art' => "juniorhigh#art"
+  get 'jh/technicalart' => "juniorhigh#technicalart"
+  get 'jh/homeeco' => "juniorhigh#homeeco"
+  get 'jh/music' => "juniorhigh#music"
+  get 'jh/guidance' => "juniorhigh#guidance"
+
+
+  get 'posts/index' => "posts#index"
+  get "posts/new" => "posts#new"
+  get "posts/:id" => "posts#show"
+  post "posts/create" => "posts#create"
+  get "posts/:id/edit" => "posts#edit"
+  post "posts/:id/update" => "posts#update"
+  post "posts/:id/destroy" => "posts#destroy"
+
+
+
+  end
